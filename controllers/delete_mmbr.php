@@ -1,12 +1,12 @@
 <?php
- $server_name='localhost';
- $server_user='root';
- $server_psw='';
- $bdd='library';
- $conn= mysqli_connect($server_name,$server_user,$server_psw,$bdd);
-  if(!$conn){
-    echo("DB not found");
-  }
+$server_name='localhost';
+$server_user='root';
+$server_psw='';
+$bdd='library';
+$conn= mysqli_connect($server_name,$server_user,$server_psw,$bdd);
+ if(!$conn){
+   echo("DB not found");
+ }
 
  if(isset($_POST['delete'])){
     $id = $_POST['num'];
